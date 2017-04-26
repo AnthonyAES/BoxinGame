@@ -39,6 +39,14 @@ var coachPlus = "Met plus de coups tu l’as a peine touché là !";
 //evenements
 btnJouez.addEventListener('click', accueilToJeux);
 btnOk.addEventListener('click', verifNombre);
+
+document.querySelector("input").addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.querySelector(".btn-ok").click();
+    }
+});
+
 btnRejouez1.addEventListener('click', gagnerToJeux);
 btnRejouez2.addEventListener('click', perduToJeux);
 
