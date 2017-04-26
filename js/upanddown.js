@@ -51,6 +51,11 @@ function accueilToJeux() {
 
 function verifNombre() {
     
+    if((blcNb.value > 100) || (blcNb.value < 0)){
+        alert("Choisis un chiffre entre 1 et 100");
+    
+    } else
+    
     if(coupjouer < 1) {
         coachTalk.innerText = coachStart;
         
