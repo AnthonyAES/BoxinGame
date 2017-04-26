@@ -225,3 +225,62 @@ input:focus {
     height: 100vh;
 }
 
+@media only screen and (max-width : 1366px) {
+    .perso-small > img {
+        width: 380px;
+        height: auto;
+    }
+    
+    .perso-small > p, .jeux > .perso-small > p {
+        font-size: 11px;
+        width: 198px;
+        height: 109px;
+        margin: 0;
+        top: 0;
+        right: 0;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    
+    .fontred {
+        font-size: 17px;
+    }
+    
+    .interface > img {
+        width: 450px;
+        height: auto;
+    }
+    
+    .interface {
+        margin-top: -165px;
+        margin-left: -225px;
+    }
+    
+    input {
+        width: 105px;
+        height: 80px;
+        font-size: 40px;
+        top: 83px;
+        left: 32px;
+    }
+    
+    .btn-ok {
+        top: 99px;
+        right: 16px;
+        font-size: 30px;
+    }
+    
+    .plus > img, .moins > img {
+        width: 54px;
+        height: auto;
+    }
+    
+    .plus, .moins {
+        margin-left: -27px;
+    }
+    
+    .moins {
+        bottom: 17%;
+    }
+}
+
