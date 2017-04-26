@@ -88,11 +88,16 @@ header {
 
 .jeux > .perso-small > p {
     position: absolute;
-    top: 50px;
+    top: 0;
     right: 23px;
     width: 280px;
-    height: 120px;
+    height: 148px;
     text-align: center;
+    display: flex;
+}
+
+.bullegame {
+    margin: auto;
 }
 
 input {
@@ -160,12 +165,18 @@ input:focus {
 /* ------------------ GAGNER ----------------- */
 .perso-big > p {
     position: absolute;
-    top: 55px;
+    top: 0;
     right: 30px;
     width: 480px;
-    height: 200px;
+    height: 300px;
     text-align: center;
     font-size: 38px;
+    display: flex;
+    margin: 0;
+}
+
+.fin {
+    margin: auto;
 }
 
 .btnwin {
@@ -188,16 +199,6 @@ input:focus {
 }
 
 /* ------------------ PERDU ----------------- */
-.perso-big > p {
-    position: absolute;
-    top: 64px;
-    right: 15px;
-    width: 520px;
-    height: 200px;
-    text-align: center;
-    font-size: 32px;
-}
-
 .btnfail {
     position: absolute;
     right: 20%;

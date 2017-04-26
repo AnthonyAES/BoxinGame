@@ -31,7 +31,7 @@ var nombre = Math.ceil(Math.random()*100);
 var nbCoup = document.querySelector("#fightround");
 
 var coachTalk = document.querySelector(".bullegame");
-var coachStart = "Alors combien de coups penses tu qu’il faudra pour le mettre K.O ?";
+var coachStart = "Alors combien de coups penses tu qu’il faudra pour le mettre K.O ?" + "\n Ne met pas plus de 100 coups";
 var coachMoins = "Tu frappe trop! la plupart de tes coups ne le touche pas!";
 var coachPlus = "Met plus de coups tu l’as a peine touché là !";
 
@@ -254,6 +254,7 @@ function perduToJeux() {
     coupjouer = 0;
     nombre = Math.ceil(Math.random()*100);
     blcNb.value = "";
+    coachTalk.innerText = coachStart;
 }
 
 function gagnerToJeux() {
@@ -271,5 +272,6 @@ function gagnerToJeux() {
     coupjouer = 0;
     nombre = Math.ceil(Math.random()*100);
     blcNb.value = "";
+    coachTalk.innerText = coachStart;
 }
 
