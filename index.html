@@ -26,13 +26,13 @@
     
     <body>
            
-        <section class="accueil cacher">
+        <section class="accueil">
            <header>
                <h2>Combat</h2>
            </header>
             <div class="buttonfight">
             <img src="images/fightbutton.png" alt="deux gant de box servant de bouton jouer" width="1363" height="315" class="fightbutton1">
-            <img src="images/fightbuttonhover.png" alt="deux gant de box servant de bouton jouer" width="1363" height="315" class="fightbutton2">
+                <img src="images/fightbuttonhover.png" alt="deux gant de box servant de bouton jouer" width="1363" height="315" class="fightbutton2">
             </div>
             <div class="perso-small">
                 <p>ça y est ! c’est le grand jour! Reste concentré et trouve en combien de coups tu le mettras <span class="fontred">K.O</span></p>
@@ -40,11 +40,11 @@
             </div>
         </section>
        
-        <section class="jeux">
+        <section class="jeux cacher">
             <div class="interface">
                 <div class="reponse">
                     <input type="text" name="nombre" required>
-                    <button class="btn-ok">PUNCH!</button>
+                    <button type = "button" class="btn-ok">PUNCH!</button>
                 </div>
                 <img src="images/gametype.png" alt="gant de box rouge servant d'interface de jeux" width="634" height="459">
             </div> 
@@ -62,37 +62,42 @@
             
             
              <div class="aide">
-                   <div class="plus">
+                   <div class="plus cacher">
                        <img src="images/up.png" alt="gant de boxe vers le haut avec un plus" width="84" height="182">
                    </div>
                    
-                    <div class="moins">
+                    <div class="moins cacher">
                         <img src="images/down.png" alt="gant de boxe vers le bas avec un moins" width="84" height="182">
                     </div>
              </div>
              
              <div class="perso-small">
-                <p class="bullegame"></p>
+                 <p><span class="bullegame"></span></p>
                 <img src="images/persosmall.png" alt="coach de box" width="618" height="487">
             </div>
        </section>
        
        <section class="gagner cacher">
             <div class="perso-big">
-                <p>tu l’as eu en <span id="fightround"></span> coups! Tu vois quand tu veux!</p>
+                <p>tu l’as eu en <span id="fightround"></span> coup(s)!<br/> Tu vois quand tu veux!</p>
                 <img src="images/persobiggood.png" alt="coach de box content" width="1041" height="817">
             </div>
-            
-            <img src="images/winner.png" alt="boxer avec ceinture de champion" width="573" height="923">   
+            <div class="btnwin">
+                <img src="images/winner.png" alt="boxer avec ceinture de champion" width="573" height="923" class="winner1">
+                <img src="images/winnerhover.png" alt="boxer avec ceinture de champion" width="573" height="923" class="winner2">
+           </div>
        </section>
        
        <section class="perdu cacher">
             <div class="perso-big">
-                <p>Tu ne ferais même pas peur à une grand mère! Retournes à l’entrainement!</p>
-                <img src="images/persobiggood.png" alt="coach de box content" width="1041" height="817">
+                <p>Tu ne ferais même pas peur à une grand mère!<br/> Retournes à l’entrainement!</p>
+                <img src="images/persobig.png" alt="coach de box content" width="1041" height="817">
             </div>
             
-            <img src="images/retry.png" alt="punching ball rouge" width="256" height="949">   
+           <div class="btnfail">
+                <img src="images/retry.png" alt="punching ball rouge" width="256" height="949" class="fail1">
+                <img src="images/retryhover.png" alt="punching ball rouge" width="256" height="949" class="fail2">
+           </div>
        </section>
        
        

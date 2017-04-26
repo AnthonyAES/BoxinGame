@@ -15,6 +15,9 @@ body {
     font-family: 'ShowcardGothic';
     overflow:hidden;
     background: url(../images/background/bg1.png);
+    background-size: cover;
+    width: 100%;
+    height: auto;
 }
 
 header {
@@ -27,7 +30,7 @@ header {
 
 .dead {
     filter: grayscale();
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 /* ------------------ ACCUEIL ----------------- */
@@ -54,7 +57,7 @@ header {
     opacity: 0;
 }
 
-.perso-small {
+.perso-small, .perso-big {
     position: absolute;
     bottom: -6px;
     left: 10px;
@@ -65,7 +68,7 @@ header {
     top: 39px;
     right: 23px;
     width: 280px;
-    height: 150px;
+    height: 120px;
     text-align: center;
 }
 
@@ -74,15 +77,22 @@ header {
     font-size: 22px;
 }
 
-
 /* ------------------ JEUX ----------------- */
-
 .interface {
     position: absolute;
     top: 50%;
     left: 50%;
     margin-top: -229.5px;
     margin-left: -317px
+}
+
+.jeux > .perso-small > p {
+    position: absolute;
+    top: 50px;
+    right: 23px;
+    width: 280px;
+    height: 120px;
+    text-align: center;
 }
 
 input {
@@ -96,7 +106,7 @@ input {
     text-align: center;
     color: white;
     border: none;
-    top: 138px;
+    top: 116px;
     left: 45px;
 }
 
@@ -104,3 +114,113 @@ input:focus {
     outline-offset: inherit;
     outline: inherit;
 }
+
+.btn-ok {
+    background-color: transparent;
+    font-family: 'ShowcardGothic';
+    color: white;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 150px;
+    right: 40px;
+    text-shadow: #151515 3px 3px, #151515 -3px 3px, #151515 -3px -3px, #151515 3px -3px, 5px 5px #000000;
+}
+
+.btn-ok:focus {
+    outline: inherit;
+    outline-offset: inherit;
+}
+
+.btn-ok:hover {
+    color: #f2f2f2;
+}
+
+.vie {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.plus {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left: -42px;
+}
+
+.moins {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    margin-left: -42px;
+}
+
+/* ------------------ GAGNER ----------------- */
+.perso-big > p {
+    position: absolute;
+    top: 55px;
+    right: 30px;
+    width: 480px;
+    height: 200px;
+    text-align: center;
+    font-size: 38px;
+}
+
+.btnwin {
+    position: absolute;
+    right: 10%;
+    bottom: 24px;
+}
+
+.winner1 {
+    position: absolute;
+    cursor: pointer
+}
+
+.winner2 {
+    cursor: pointer;
+}
+
+.winner1:hover {
+    opacity: 0;
+}
+
+/* ------------------ PERDU ----------------- */
+.perso-big > p {
+    position: absolute;
+    top: 64px;
+    right: 15px;
+    width: 520px;
+    height: 200px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.btnfail {
+    position: absolute;
+    right: 20%;
+    top: 0;
+}
+
+.fail1 {
+    position: absolute;
+    cursor: pointer
+}
+
+.fail2 {
+    cursor: pointer;
+}
+
+.fail1:hover {
+    opacity: 0;
+}
+
+.perdu {
+    background: url(../images/background/bg2.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
