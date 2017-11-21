@@ -225,7 +225,7 @@ input:focus {
     height: 100vh;
 }
 
-@media only screen and (max-width : 1366px) {
+@media only screen and (max-width : 1650px) {
     .perso-small > img, .perso-big > img {
         width: 380px;
         height: auto;
