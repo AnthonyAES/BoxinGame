@@ -42,7 +42,7 @@ header {
     margin-top: 150px;
 }
 
-.fightbutton1, fightbutton2 {
+.fightbutton1, .fightbutton2 {
     cursor: pointer;
     margin-left: auto;
     margin-right: auto;
@@ -96,7 +96,7 @@ header {
     display: flex;
 }
 
-.bullegame, .bullegame2 {
+.bullegame {
     margin: auto;
 }
 
@@ -226,20 +226,27 @@ input:focus {
 }
 
 @media only screen and (max-width : 1366px) {
-    .perso-small > img {
+    .perso-small > img, .perso-big > img {
         width: 380px;
         height: auto;
     }
     
-    .perso-small > p, .jeux > .perso-small > p {
+    .perso-small > p, .jeux > .perso-small > p, .perso-big > p {
         font-size: 11px;
         width: 198px;
         height: 109px;
         margin: 0;
-        top: 0;
         right: 0;
         padding: 15px;
         box-sizing: border-box;
+    }
+    
+    .perso-small > p {
+        top: 10px;
+    }
+    
+    .jeux > .perso-small > p {
+        top: 0;
     }
     
     .fontred {
@@ -282,4 +289,45 @@ input:focus {
     .moins {
         bottom: 17%;
     }
+    
+    .btnfail {
+        max-height: 100%;
+        height: 90%;
+    }
+    
+    .btnwin {
+        height: auto;
+    }
+    
+    .btnwin > img, .btnfail > img {
+        height: 80%;
+        width: auto;
+        bottom: 0;
+    }
+    
+    .btnfail > img {
+        bottom: auto;
+    }
+    
+    .btnwin {
+        width: 284px;
+    }
+    
+    .btnwin > img {
+        width: 100%;
+        height: auto;
+        bottom: auto;
+    }
+    
+    .buttonfight {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .fightbutton1, .fightbutton2 {
+        width: 100%;
+        height: auto;
+    }
+    
 }
