@@ -236,7 +236,7 @@ input:focus {
         width: 198px;
         height: 109px;
         margin: 0;
-        top: 10px;
+        top: 0;
         right: 0;
         padding: 15px;
         box-sizing: border-box;
