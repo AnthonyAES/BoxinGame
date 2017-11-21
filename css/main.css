@@ -331,3 +331,34 @@ input:focus {
     }
     
 }
+
+/* ---------------- Mobile & Tablette --------------- */
+.mobile {
+    background-color: #242424;
+    color: white;
+}
+
+@media (max-width : 1024px) {
+    section:not(.mobile) {
+        display: none;
+    }
+    
+    .mobile.cacher {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 500;
+        top: 0;
+        left: 0;
+    }
+    
+    .mobile p {
+        font-size: 42px;
+        text-align: center;
+    }
+    
+    body {
+        pointer-events: none;
+    }
+}
